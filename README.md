@@ -1,58 +1,88 @@
-# Strata Reloaded
+# Naringu
 
-Simple, clean personal blogging template for Jekyll based on Strata by HTML5 UP.
 
-![Strata Reloaded template screenshot](images/_screenshot.png)
+Naringu is dark jekyll theme that provide fully furnished jekyll setup, come with contact form, #6DD HTML color schema, and more features. It's based on [Poole](http://getpoole.com), the Jekyll butler.
 
-## Features
+![Naringu](images/screenshot-1.png)
+![Naringu](images/screenshot-2.png)
+![Naringu](images/screenshot-3.png)
+![Naringu](images/screenshot-4.png)
 
-* Parallax background effect
-* Lightbox gallery
-* Pre-styled components
-* Blog with pagination
-* Configurable footer
-* Optimized for editing in [CloudCannon](http://cloudcannon.com/)
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
-* Webmaster Verification
+## Contents
 
-## Develop
+- [Usage](#usage)
+ - [Sidebar menu](#sidebar-menu)
+  - [Themes](#themes)
+  - [Reverse layout](#reverse-layout)
+  - [Contact Form](#contact-form)
+  - [Comments](#comments)
+- [Development](#development)
+  - [Author](#author)
+  - [Contributors](#contributors)
+- [License](#license)
 
-1. Add your site and author details in `_config.yml`.
-2. Add your Google Analytics key to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
 
-## Develop
+## Usage
 
-Urban was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+Just download and start the Jekyll server or fork this repo.
 
-Install the dependencies with [Bundler](http://bundler.io/):
+### Sidebar menu
 
-~~~bash
-$ bundle install
-~~~
+Create a list of nav links in the sidebar by assigning each Jekyll page the correct layout in the page's [front-matter](http://jekyllrb.com/docs/frontmatter/).
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+```
+---
+layout: page
+title: About
+---
+```
 
-~~~bash
-$ bundle exec jekyll serve
-~~~
+**Why require a specific layout?** Jekyll will return *all* pages, including the `atom.xml`, and with an alphabetical sort order. To ensure the first link is *Home*, we exclude the `index.html` page from this list by specifying the `page` 
 
-## Editing
 
-Strata Reloaded is already optimized for adding, updating and removing posts and footer elements in [CloudCannon](https://app.cloudcannon.com/).
+### Reverse layout
 
-### Posts
+Reverse the page orientation with a single class.
 
-* Add, update or remove a post in the *Posts* collection.
-* Change the defaults when new posts are created in `_posts/_defaults.md`.
+```html
+<body class="layout-reverse">
+  ...
+</body>
+```
+### Contact Form
 
-### Footer
+Using formspree to enable contact form in static site.
 
-* Exposed as a data file to give clients better access.
-* Set in the *Data* / *Footer* section.
+Go a head `contact/index.html` just change the email in the code
+
+```html
+<form action="http://formspree.io/youremail@yourdomain.com" role="form" method="POST">
+```
+
+### Comments
+
+Using [disqus](http://disqus.com/) to enable comments in static site.
+
+Just edit variable `disqus` in `_config.yml` to your disqus link.
+
+## Development
+
+Naringu come with two branches :.
+
+- `master` for active development. 
+- `gh-pages` for preview of Naringu
+
+### Author
+
+**Rizky Ariestiyansyah**
+- <https://github.com/ariestiyansyah>
+- <https://twitter.com/ariestiyansyah>
+
+### Contributors
+
+**Gildásio Júnior** - *a.k.a. @gjuniioor*
+- https://github.com/gjuniioor
 
 ## License
 
-Free for personal and commercial use under the CCA 3.0 license. See LICENSE file for additional information and terms of use. This theme was adapted from Strata by HTML5 UP for use with [CloudCannon](http://cloudcannon.com) by [Comfusion LLC](http://comfusionllc.com).
+Open sourced under the [MIT license](LICENSE.md).
