@@ -1,11 +1,11 @@
 # Setup
-title: Not Pure Poole
-description: A simple, beautiful, and powerful Jekyll theme for blogs
-url: https://vszhub.github.io
-avatar: /avatar.jpeg
+title: 康辉的博客
+description: 我们要有最朴素的生活，与最遥远的梦想。即使明天天寒地冻，路远马亡。
+url: https://journey175.github.io
+avatar: /image/myself.jpg
 paginate: 5
 permalink: pretty
-cover_image: /bg.jpeg
+cover_image: /image/blueair.jpg
 
 # Gems
 plugins:
@@ -28,15 +28,14 @@ exclude:
   - not-pure-poole.gemspec
 
 # Optimize Jekyl SEO Tag
-twitter:
-  username: vszhub
-  card: summary
+# twitter:
+# username: vszhub
+#  card: summary
 logo: logo.png
 social:
-  name: Songzi Vong
+  name: kanghui
   links:
-    - https://twitter.com/vszhub
-    - https://github.com/vszhub
+    - https://github.com/journey75
 google_site_verification: xxxxx
 lang: en
 
@@ -54,6 +53,6 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Songzi Vong
-  url: https://github.com/vszhub/
-  email: vszhub@gmail.com
+  name: kanghui
+  url: https://github.com/journey175
+  email: 1695970289@qq.com
