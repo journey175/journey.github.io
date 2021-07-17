@@ -1,39 +1,31 @@
-# Dependencies
-markdown:            kramdown
-highlighter:         rouge
+name: Herring Cove
+author: Herring Cove
+baseurl: /herring-cove
+description: theme for jekyll
+github: http://www.github.com/arnp
+twitter: http://www.twitter.com/
+facebook: http://www.facebook.com
+linkedin: http://www.linkedin.com
+email: rnpatel[at]me.com
+location: 42°2'16"N   70°12'47"W
+disqus: diqus-username
 
-# Gems (for Jekyll 3.0)
-gems: [jekyll-paginate]
+##Make sure to edit the above fields, especially for disqus.
 
-# Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
 
-# Setup
-title:               Naringu
-tagline:             'A Hacker like jekyll theme'
-description:         'oonlab is crafted with <3 by ariestiyansyah.'
-url:                 http://naringu.oonlab.com
-baseurl:             /
-paginate:            7
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["tables"]
 
-# About/contact
-author:
-  name:              Rizky Ariestiyansyah
-  url:               https://twitter.com/ariestiyansyah
-  email:             ariestiyansyah.rizky@gmail.com
-
-# Custom vars
-version:             2.0
-
-# Social Media
-github:				http://github.com/ariestiyansyah
-twitter:			http://twitter.com/ariestiyansyah
-disqus:             testnaringu
-
-# Theme Author (Please don't edit this line cause of MIT LICENSE rules)
-theme:
-  creator:			Rizky Ariestiyansyah
-  codename:			Naringu
-  link:             https://github.com/ariestiyansyah/naringu
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

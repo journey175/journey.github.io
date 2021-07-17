@@ -1,5 +1,9 @@
-    <div align="center" class="footer">
-        <a href="{{ site.theme.link }}" target="_blank" title="naringu">{{ site.theme.codename }}</a>  is designed by {{ site.theme.creator }}<br />Copyright © {{ site.time | date: '%Y' }} <br>
-    </div>
-  </body>
-</html>
+<div class="container">
+  <footer>
+    <p class="text-muted credit">
+      &copy; {{ site.time | date: '%Y' }} {{ site.name }} &middot;
+      <a href="https://github.com/arnp/herring-cove"> Herring Cove for Jekyll </a>
+      {{ site.time }}
+    </p>
+  </footer>
+</div>
